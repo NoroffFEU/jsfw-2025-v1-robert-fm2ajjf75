@@ -1,1 +1,16 @@
+footer {
+  padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.layout {
+  padding-bottom: 3rem; /* Height of the footer */
+  box-sizing: border-box;
+  margin: 0 10%;
+}
+
 @import '~bootstrap/scss/bootstrap';
