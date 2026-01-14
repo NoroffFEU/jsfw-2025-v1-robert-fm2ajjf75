@@ -1,4 +1,4 @@
-const BASE_URL = "https://api.example.com";
+import { BASE_URL } from "./config.js";
 
 export async function getProductById(id) {
   try {
