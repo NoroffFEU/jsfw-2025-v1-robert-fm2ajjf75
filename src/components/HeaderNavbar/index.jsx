@@ -1,14 +1,11 @@
+import "../../styles/components/CartIcon.scss";
 import { Link, NavLink } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import SearchBar from "../SearchBar";
 
 function HeaderNavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary w-100">
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
           Everything Store
@@ -27,7 +24,7 @@ function HeaderNavBar() {
               Contact
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex justify-content-center" role="search">
             <SearchBar />
             <Button variant="outline-success">Search</Button>
           </Form>
