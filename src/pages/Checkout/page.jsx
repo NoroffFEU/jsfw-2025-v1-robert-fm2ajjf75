@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../context/Cart";
-import CheckoutItem from "./CheckoutItem";
 import CheckoutTable from "./CheckoutTable";
 import CheckoutSummary from "./CheckoutSummary";
 import EmptyCart from "./EmptyCart";
@@ -21,26 +20,11 @@ function Checkout() {
   return (
     <Container className="my-5">
       <h1 className="mb-4">Checkout</h1>
-
-      {/* Mobile Card View */}
-      <div className="d-md-none">
-        {cart.map((item) => (
-          <CheckoutItem
-            key={item.id}
-            item={item}
-            onUpdateQuantity={updateQuantity}
-            onRemove={removeFromCart}
-          />
-        ))}
-      </div>
-
-      {/* Desktop Table View */}
       <CheckoutTable
         cart={cart}
         onUpdateQuantity={updateQuantity}
         onRemove={removeFromCart}
       />
-
       <CheckoutSummary total={total} onCheckout={handleCheckout} />
     </Container>
   );
