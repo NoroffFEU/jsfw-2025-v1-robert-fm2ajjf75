@@ -2,7 +2,7 @@ import CheckoutItem from "../CheckoutItem";
 
 function CheckoutTable({ cart, onUpdateQuantity, onRemove }) {
   return (
-    <div className="table-responsive d-none d-md-block">
+    <div className="table-responsive">
       <table className="table table-striped table-bordered table-hover">
         <thead>
           <tr>
