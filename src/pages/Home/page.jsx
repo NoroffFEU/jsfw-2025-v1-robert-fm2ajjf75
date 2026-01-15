@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <div>
-      <h1 className="mb-4">Products</h1>
+      <h1 className="mb-4 mt-4">Products</h1>
       <div className="container">
         <div className="row">
           {products.map((product) => (

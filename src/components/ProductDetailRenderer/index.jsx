@@ -39,7 +39,7 @@ function ProductDetailRenderer({ product, onAddToCart }) {
           />
         </Col>
         <Col md={6}>
-          <h1 className="mb-3">{title}</h1>
+          <h1 className="mb-4 mt-4">{title}</h1>
           <p className="text-muted mb-4">{description}</p>
 
           <div className="mb-4">
