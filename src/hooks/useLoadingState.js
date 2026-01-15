@@ -1,18 +1,26 @@
-import { useEffect, useState } from "react";
+import { useState, useCallback } from "react";
 
-function useLoadingState(delay = 800) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+function useLoadingState(initialLoading = true) {
+  const [isLoading, setIsLoading] = useState(initialLoading);
+  const [error, setError] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, delay);
+  const startLoading = useCallback(() => {
+    setIsLoading(true);
+    setError(false);
+  }, []);
 
-    return () => clearTimeout(timer);
-  }, [delay]);
+  const stopLoading = useCallback(() => {
+    setIsLoading(false);
+  }, []);
 
-  return { isLoading, error, setError };
+  return {
+    isLoading,
+    error,
+    setError,
+    setIsLoading,
+    startLoading,
+    stopLoading,
+  };
 }
 
 export default useLoadingState;

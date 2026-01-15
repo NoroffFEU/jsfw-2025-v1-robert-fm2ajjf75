@@ -1,18 +1,27 @@
 import "../../styles/global.scss";
 import LoadingSpinner from "../../components/ui/LoadingSpinner";
-import useLoadingState from "../../hooks/useLoadingState";
 import ErrorMessage from "../../components/ui/ErrorMessage";
+import { useProducts } from "../../context/Products";
+import ProductCard from "../../components/ProductCard";
 
 function Home() {
-  const { isLoading, error } = useLoadingState();
+  const { products, isLoading, error } = useProducts();
 
   if (isLoading) return <LoadingSpinner />;
   if (error) return <ErrorMessage message={error} />;
 
   return (
     <div>
-      <h1>Home</h1>
-      <p>Products will be shown here.</p>
+      <h1 className="mb-4">Products</h1>
+      <div className="container">
+        <div className="row">
+          {products.map((product) => (
+            <div key={product.id} className="col-md-4 mb-4">
+              <ProductCard product={product} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
