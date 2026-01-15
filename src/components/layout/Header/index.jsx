@@ -3,7 +3,7 @@ import HeaderCartIcon from "../../HeaderCartIcon";
 
 function Header() {
   return (
-    <header className="bg-body-tertiary">
+    <header>
       <HeaderNavBar />
       <div className="cart-icon bg-body-tertiary">
         <HeaderCartIcon />
