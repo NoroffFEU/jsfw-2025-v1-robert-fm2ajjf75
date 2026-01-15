@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../context/Cart";
-import CheckoutItem from "../../components/CheckoutItem";
-import CheckoutTable from "../../components/CheckoutTable";
-import CheckoutSummary from "../../components/CheckoutSummary";
-import EmptyCart from "../../components/EmptyCart";
+import CheckoutItem from "./CheckoutItem";
+import CheckoutTable from "./CheckoutTable";
+import CheckoutSummary from "./CheckoutSummary";
+import EmptyCart from "./EmptyCart";
 
 function Checkout() {
   const { cart, removeFromCart, updateQuantity, total } = useCart();

@@ -9,8 +9,7 @@ import {
   Card,
   ListGroup,
 } from "react-bootstrap";
-import getDiscountInfo from "../../utils/getdiscountinfo";
-import "../../styles/components/ProductDetail.scss";
+import getDiscountInfo from "../../../utils/getdiscountinfo";
 
 function ProductDetailRenderer({ product, onAddToCart }) {
   const {
