@@ -10,6 +10,7 @@ import {
   ListGroup,
 } from "react-bootstrap";
 import getDiscountInfo from "../../utils/getdiscountinfo";
+import "../../styles/components/ProductDetail.scss";
 
 function ProductDetailRenderer({ product, onAddToCart }) {
   const {
@@ -29,7 +30,13 @@ function ProductDetailRenderer({ product, onAddToCart }) {
     <Container className="my-5">
       <Row>
         <Col md={6}>
-          <Image src={image.url} alt={image.alt || title} fluid rounded />
+          <Image
+            src={image.url}
+            alt={image.alt || title}
+            fluid
+            rounded
+            className="product-detail-image"
+          />
         </Col>
         <Col md={6}>
           <h1 className="mb-3">{title}</h1>
