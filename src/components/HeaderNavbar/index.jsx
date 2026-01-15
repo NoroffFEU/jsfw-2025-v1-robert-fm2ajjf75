@@ -7,16 +7,12 @@ function HeaderNavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary w-100">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand className="me-5" as={Link} to="/">
           Everything Store
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
+          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
             <Nav.Link as={NavLink} to="/">
               Home
             </Nav.Link>
