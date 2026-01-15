@@ -19,9 +19,9 @@ function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="product/:id" element={<ProductDetailRenderer />} />
-              <Route path="Contact" element={<Contact />} />
+              <Route path="contact" element={<Contact />} />
               <Route path="cart" element={<Checkout />} />
-              <Route path="CheckoutSuccess" element={<CheckoutSuccess />} />
+              <Route path="checkout-success" element={<CheckoutSuccess />} />
               <Route path="*" element={<RouteNotFound />} />
             </Route>
           </Routes>
