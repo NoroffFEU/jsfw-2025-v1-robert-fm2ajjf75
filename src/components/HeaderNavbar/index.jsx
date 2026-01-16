@@ -7,14 +7,14 @@ import HeaderCartIcon from "../HeaderCartIcon";
 
 function HeaderNavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary w-100 me-5 ms-5">
+    <Navbar expand="lg" className="bg-body-tertiary w-100 ms-lg-5 me-lg-5">
       <Container fluid>
-        <Navbar.Brand className="me-5" as={Link} to="/">
+        <Navbar.Brand className="me-md-5" as={Link} to="/">
           Everything Store
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+          <Nav className="me-auto my-5 gap-4 my-lg-0" navbarScroll>
             <Nav.Link as={NavLink} to="/">
               Home
             </Nav.Link>
