@@ -4,17 +4,30 @@
 }
 
 .product-detail-image {
-  max-width: 50%;
+  max-width: 25em;
   height: auto;
   display: block;
 }
 
 .review-description {
   justify-self: flex-start;
+  text-align: left;
 }
 
 .review-rating-badge {
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+@media (max-width: 992px) {
+  .product-detail-image {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-detail-image {
+    max-width: 100%;
+  }
 }

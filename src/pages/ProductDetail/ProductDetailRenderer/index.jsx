@@ -28,8 +28,8 @@ function ProductDetailRenderer({ product, onAddToCart }) {
   return (
     <Container className="my-5">
       <Row>
-        <Col md={6}>
-          <div className="product-detail-container">
+        <Col md={6} className="d-flex">
+          <div className="product-detail-container mb-5 mb-md-0">
             {rating > 0 && (
               <div className="review-rating-badge">
                 <Badge bg="warning" text="dark">
