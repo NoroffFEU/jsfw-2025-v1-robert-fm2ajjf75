@@ -18,16 +18,20 @@ function CheckoutItem({ item, onUpdateQuantity, onRemove }) {
           <Link to={`/product/${item.id}`}>{item.title}</Link>
         </div>
       </td>
-      <td data-label="Price">${item.discountedPrice.toFixed(2)}</td>
-      <td data-label="Quantity">
+      <td data-label="Price" className="align-middle">
+        ${item.discountedPrice.toFixed(2)}
+      </td>
+      <td data-label="Quantity" className="align-middle">
         <QuantityControl
           quantity={item.quantity}
           onDecrease={() => onUpdateQuantity(item.id, item.quantity - 1)}
           onIncrease={() => onUpdateQuantity(item.id, item.quantity + 1)}
         />
       </td>
-      <td data-label="Subtotal">${subtotal}</td>
-      <td data-label="Actions">
+      <td data-label="Subtotal" className="align-middle">
+        ${subtotal}
+      </td>
+      <td data-label="Actions" className="align-middle text-end">
         <Button size="sm" variant="danger" onClick={() => onRemove(item.id)}>
           Remove
         </Button>

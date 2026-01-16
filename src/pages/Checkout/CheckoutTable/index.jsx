@@ -3,14 +3,14 @@ import CheckoutItem from "../CheckoutItem";
 function CheckoutTable({ cart, onUpdateQuantity, onRemove }) {
   return (
     <div className="table-responsive">
-      <table className="table table-striped table-bordered table-hover">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th>Product</th>
             <th>Price</th>
             <th>Quantity</th>
             <th>Subtotal</th>
-            <th>Actions</th>
+            <th className="text-end">Actions</th>
           </tr>
         </thead>
         <tbody>

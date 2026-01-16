@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function CheckoutSummary({ total, onCheckout }) {
   return (
     <>
-      <Card className="mt-3">
+      <Card className="mt-3 border-0">
         <Card.Body>
-          <h3 className="text-end h4">Total: ${total.toFixed(2)}</h3>
+          <h2 className="text-end h4">Total: ${total.toFixed(2)}</h2>
         </Card.Body>
       </Card>
 
