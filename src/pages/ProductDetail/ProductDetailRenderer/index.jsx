@@ -29,16 +29,25 @@ function ProductDetailRenderer({ product, onAddToCart }) {
     <Container className="my-5">
       <Row>
         <Col md={6}>
-          <Image
-            src={image.url}
-            alt={image.alt || title}
-            fluid
-            rounded
-            className="product-detail-image"
-          />
+          <div className="product-detail-container">
+            {rating > 0 && (
+              <div className="review-rating-badge">
+                <Badge bg="warning" text="dark">
+                  ⭐ {rating}/5
+                </Badge>
+              </div>
+            )}
+            <Image
+              src={image.url}
+              alt={image.alt || title}
+              fluid
+              rounded
+              className="product-detail-image"
+            />
+          </div>
         </Col>
         <Col md={6}>
-          <h1 className="mb-4 mt-4 h3">{title}</h1>
+          <h1 className="mb-4 h3">{title}</h1>
           <p className="text-muted mb-4">{description}</p>
 
           <div className="mb-4">
@@ -62,19 +71,11 @@ function ProductDetailRenderer({ product, onAddToCart }) {
             )}
           </div>
 
-          {rating > 0 && (
-            <p className="mb-3">
-              <Badge bg="warning" text="dark">
-                ⭐ {rating}/5
-              </Badge>
-            </p>
-          )}
-
           <Button
             variant="primary"
-            size="lg"
+            size="md"
             onClick={() => onAddToCart(product)}
-            className="w-100 mb-4"
+            className="w-50 mb-4"
           >
             Add to Cart
           </Button>

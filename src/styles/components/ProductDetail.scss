@@ -1,8 +1,20 @@
+.product-detail-container {
+  position: relative;
+  display: inline-block;
+}
+
 .product-detail-image {
-  max-width: 70%;
+  max-width: 50%;
   height: auto;
+  display: block;
 }
 
 .review-description {
   justify-self: flex-start;
+}
+
+.review-rating-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
