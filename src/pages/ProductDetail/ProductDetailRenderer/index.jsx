@@ -86,7 +86,7 @@ function ProductDetailRenderer({ product, onAddToCart }) {
           <Col>
             <Card>
               <Card.Header>
-                <h4>Customer Reviews ({reviews.length})</h4>
+                <h2 className="h4">Customer Reviews ({reviews.length})</h2>
               </Card.Header>
               <ListGroup variant="flush">
                 {reviews.map((review) => (
@@ -97,7 +97,9 @@ function ProductDetailRenderer({ product, onAddToCart }) {
                         ⭐ {rating}/5
                       </Badge>
                     </div>
-                    <p className="mb-0">{review.description}</p>
+                    <p className="mb-0 review-description">
+                      {review.description}
+                    </p>
                   </ListGroup.Item>
                 ))}
               </ListGroup>
