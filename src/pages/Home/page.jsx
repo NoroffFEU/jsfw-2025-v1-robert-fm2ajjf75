@@ -13,10 +13,10 @@ function Home() {
   return (
     <div>
       <h1 className="mb-4 mt-4">Products</h1>
-      <div className="container">
+      <div className="container ps-0 pe-0">
         <div className="row">
           {products.map((product) => (
-            <div key={product.id} className="col-md-4 mb-4">
+            <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <ProductCard product={product} />
             </div>
           ))}
