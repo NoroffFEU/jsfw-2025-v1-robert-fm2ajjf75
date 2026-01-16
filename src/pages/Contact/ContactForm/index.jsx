@@ -56,12 +56,6 @@ function ContactForm() {
 
     console.log("Form Data:", formData);
 
-    setFormData({
-      fullName: "",
-      subject: "",
-      email: "",
-      body: "",
-    });
     setErrors({});
     setTouched(false);
   }
