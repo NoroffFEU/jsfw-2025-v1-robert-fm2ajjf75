@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Badge } from "react-bootstrap";
-import { useCart } from "../../context/Cart";
+import { useCart, selectItemCount } from "../../context/Cart";
 
 function HeaderCartIcon() {
-  const { itemCount } = useCart();
+  const itemCount = useCart(selectItemCount);
 
   return (
     <Link to="/cart" className="position-relative">

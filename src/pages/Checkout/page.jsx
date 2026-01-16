@@ -1,12 +1,15 @@
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../../context/Cart";
+import { useCart, selectTotal } from "../../context/Cart";
 import CheckoutTable from "./CheckoutTable";
 import CheckoutSummary from "./CheckoutSummary";
 import EmptyCart from "./EmptyCart";
 
 function Checkout() {
-  const { cart, removeFromCart, updateQuantity, total } = useCart();
+  const cart = useCart((state) => state.cart);
+  const removeFromCart = useCart((state) => state.removeFromCart);
+  const updateQuantity = useCart((state) => state.updateQuantity);
+  const total = useCart(selectTotal);
   const navigate = useNavigate();
 
   function handleCheckout() {
