@@ -22,7 +22,7 @@ function Checkout() {
 
   return (
     <Container className="my-5">
-      <h1 className="mb-4">Checkout</h1>
+      <h1 className="mb-4 text-center">Checkout</h1>
       <CheckoutTable
         cart={cart}
         onUpdateQuantity={updateQuantity}
