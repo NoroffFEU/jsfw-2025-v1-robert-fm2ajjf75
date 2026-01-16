@@ -23,7 +23,7 @@ function ProductDetailRenderer({ product, onAddToCart }) {
   } = product;
 
   const discountInfo = getDiscountInfo(price, discountedPrice);
-  const hasDiscount = discountInfo !== null;
+  const hasDiscount = discountInfo !== null && price !== discountedPrice;
 
   return (
     <Container className="my-5">
@@ -94,7 +94,7 @@ function ProductDetailRenderer({ product, onAddToCart }) {
                     <div className="d-flex justify-content-between align-items-start mb-2">
                       <strong>{review.username}</strong>
                       <Badge bg="warning" text="dark">
-                        ⭐ {rating}/5
+                        ⭐ {review.rating}/5
                       </Badge>
                     </div>
                     <p className="mb-0 review-description">
