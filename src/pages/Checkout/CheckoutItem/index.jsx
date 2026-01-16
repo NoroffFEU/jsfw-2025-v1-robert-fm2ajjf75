@@ -1,7 +1,6 @@
 import { Button, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import QuantityControl from "../QuantityControl";
-import "../../../styles/components/Checkout.scss";
 
 function CheckoutItem({ item, onUpdateQuantity, onRemove }) {
   const subtotal = (item.discountedPrice * item.quantity).toFixed(2);

@@ -1,4 +1,3 @@
-import "../../styles/components/SearchBar.scss";
 import { useMemo, useState } from "react";
 import { Form, ListGroup } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";

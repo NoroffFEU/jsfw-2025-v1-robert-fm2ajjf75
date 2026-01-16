@@ -4,7 +4,6 @@ import ErrorMessage from "../../components/ui/ErrorMessage";
 import { useProducts } from "../../context/Products";
 import { useCart } from "../../context/Cart";
 import ProductDetailRenderer from "./ProductDetailRenderer";
-import "../../styles/components/ProductDetail.scss";
 
 function ProductDetail() {
   const { id } = useParams();

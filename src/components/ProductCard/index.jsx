@@ -1,4 +1,3 @@
-import "../../styles/components/ProductCard.scss";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 

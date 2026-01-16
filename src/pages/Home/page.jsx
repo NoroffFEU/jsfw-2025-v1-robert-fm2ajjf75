@@ -1,4 +1,4 @@
-import "../../styles/global.scss";
+import "../../styles/index.scss";
 import LoadingSpinner from "../../components/ui/LoadingSpinner";
 import ErrorMessage from "../../components/ui/ErrorMessage";
 import { useProducts } from "../../context/Products";

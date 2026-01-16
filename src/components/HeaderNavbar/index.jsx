@@ -1,5 +1,3 @@
-import "../../styles/components/CartIcon.scss";
-import "../../styles/components/NavBar.scss";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import SearchBar from "../SearchBar";
