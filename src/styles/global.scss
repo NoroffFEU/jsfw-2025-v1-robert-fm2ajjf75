@@ -10,6 +10,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: #f9ffde;
 }
 
 main {
@@ -23,6 +24,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f9ffde;
+  text-align: center;
 }
 
 .Contact {

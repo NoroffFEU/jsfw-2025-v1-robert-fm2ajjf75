@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 function Footer() {
   return (
-    <footer className="bg-light">
+    <footer>
       <Container>Website footer</Container>
     </footer>
   );

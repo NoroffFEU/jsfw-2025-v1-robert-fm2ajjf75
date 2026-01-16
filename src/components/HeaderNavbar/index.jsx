@@ -5,7 +5,7 @@ import HeaderCartIcon from "../HeaderCartIcon";
 
 function HeaderNavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary w-100 ms-lg-5 me-lg-5">
+    <Navbar expand="lg" className="w-100 ms-lg-5 me-lg-5">
       <Container fluid>
         <Navbar.Brand className="me-md-5" as={Link} to="/">
           Everything Store

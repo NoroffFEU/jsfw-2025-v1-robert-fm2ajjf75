@@ -2,7 +2,7 @@ import HeaderNavBar from "../../HeaderNavbar";
 
 function Header() {
   return (
-    <header className="bg-body-tertiary">
+    <header>
       <HeaderNavBar />
     </header>
   );
