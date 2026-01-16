@@ -38,7 +38,7 @@ function ProductDetailRenderer({ product, onAddToCart }) {
           />
         </Col>
         <Col md={6}>
-          <h1 className="mb-4 mt-4">{title}</h1>
+          <h1 className="mb-4 mt-4 h3">{title}</h1>
           <p className="text-muted mb-4">{description}</p>
 
           <div className="mb-4">
@@ -86,7 +86,7 @@ function ProductDetailRenderer({ product, onAddToCart }) {
           <Col>
             <Card>
               <Card.Header>
-                <h2 className="h4">Customer Reviews ({reviews.length})</h2>
+                <h2 className="h5">Customer Reviews ({reviews.length})</h2>
               </Card.Header>
               <ListGroup variant="flush">
                 {reviews.map((review) => (
