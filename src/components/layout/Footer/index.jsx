@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 function Footer() {
   return (
     <footer>
-      <Container>Website footer</Container>
+      <Container>© 2026 Everything Store</Container>
     </footer>
   );
 }
