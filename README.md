@@ -29,3 +29,5 @@ npm start
 ```
 
 ## Live demo
+
+[Everything Store](https://everythingstorefed.netlify.app/)
