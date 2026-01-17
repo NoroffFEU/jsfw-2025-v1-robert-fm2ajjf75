@@ -1,11 +1,19 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import SearchBar from "../SearchBar";
 import HeaderCartIcon from "../HeaderCartIcon";
 
 function HeaderNavBar() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Navbar expand="lg" className="w-100 ms-lg-5 me-lg-5">
+    <Navbar
+      expand="lg"
+      className="w-100 ms-lg-5 me-lg-5"
+      expanded={expanded}
+      onToggle={setExpanded}
+    >
       <Container fluid>
         <Navbar.Brand className="me-md-5" as={Link} to="/">
           Everything Store
@@ -13,10 +21,14 @@ function HeaderNavBar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-5 gap-4 my-lg-0" navbarScroll>
-            <Nav.Link as={NavLink} to="/">
+            <Nav.Link as={NavLink} to="/" onClick={() => setExpanded(false)}>
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/Contact">
+            <Nav.Link
+              as={NavLink}
+              to="/Contact"
+              onClick={() => setExpanded(false)}
+            >
               Contact
             </Nav.Link>
           </Nav>
