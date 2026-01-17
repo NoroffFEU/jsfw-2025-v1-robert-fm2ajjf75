@@ -20,7 +20,7 @@ function HeaderNavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-5 gap-4 my-lg-0" navbarScroll>
+          <Nav className="me-auto my-5 gap-4 my-lg-0 text-center" navbarScroll>
             <Nav.Link as={NavLink} to="/" onClick={() => setExpanded(false)}>
               Home
             </Nav.Link>
