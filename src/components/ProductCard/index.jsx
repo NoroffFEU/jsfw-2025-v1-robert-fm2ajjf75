@@ -8,7 +8,7 @@ function ProductCard({ product }) {
       <Card.Body className="d-flex flex-column">
         <Card.Title>{product.title}</Card.Title>
         <Card.Text className="flex-grow-1">
-          ${product.price.toFixed(2)}
+          ${product.discountedPrice.toFixed(2)}
         </Card.Text>
         <Button as={Link} to={`/product/${product.id}`} variant="primary">
           View Product
