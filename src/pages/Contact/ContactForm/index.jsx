@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { validateField } from "../../../utils/validatefield";
+import { validateField } from "../../../utils/validateField";
 
 function ContactForm() {
   const [formData, setFormData] = useState({

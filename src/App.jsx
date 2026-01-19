@@ -1,10 +1,10 @@
 import Layout from "./components/layout";
-import Home from "./pages/Home/page";
-import ProductDetailRenderer from "./pages/ProductDetail/page";
-import Contact from "./pages/Contact/page";
-import Checkout from "./pages/Checkout/page";
-import CheckoutSuccess from "./pages/CheckoutSuccess/page";
-import RouteNotFound from "./pages/RouteNotFound/page";
+import Home from "./pages/Home";
+import ProductDetailRenderer from "./pages/ProductDetail";
+import Contact from "./pages/Contact";
+import Checkout from "./pages/Checkout";
+import CheckoutSuccess from "./pages/CheckoutSuccess";
+import RouteNotFound from "./pages/RouteNotFound";
 import { ProductsProvider } from "./context/Products";
 import { Routes, Route } from "react-router-dom";
 
