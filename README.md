@@ -1,6 +1,10 @@
 # EverythingShop
 
-A simple e-commerce application built with React as part of a FED assignment.
+![Project Screenshot](images/screenshot.png)
+
+## Description
+
+EverythingShop is a simple e-commerce application built with React as part of a Front-End Development assignment. Users can browse products, view detailed product information, add items to the cart, and complete a checkout flow.
 
 ## Features
 
@@ -12,22 +16,47 @@ A simple e-commerce application built with React as part of a FED assignment.
 - Contact form with validation
 - Responsive design using Bootstrap
 
-## Tech stack
+## Built With
 
-- React (CRA)
+- React (Create React App)
 - React Router
-- Zustand (state management)
+- Zustand
 - React Bootstrap
 - Sass
 
-## Getting started
+## Getting Started
+
+### Installing
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/NoroffFEU/jsfw-2025-v1-robert-fm2ajjf75
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
-npm start
-
 ```
 
-## Live demo
+### Running
 
-[Everything Store](https://everythingstorefed.netlify.app/)
+To start the development server:
+
+```bash
+npm start
+```
+
+## Project Structure
+
+- Product listing page
+- Product detail page
+- Shopping cart
+- Checkout success page
+- Contact page
+
+## Live Demo
+
+- Live Site: https://everythingstorefed.netlify.app/
+- GitHub Repo: https://github.com/NoroffFEU/jsfw-2025-v1-robert-fm2ajjf75
