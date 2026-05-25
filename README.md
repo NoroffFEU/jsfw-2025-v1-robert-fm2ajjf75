@@ -1,10 +1,10 @@
-# EverythingShop
+# Everything Store
 
 ![Project Screenshot](images/screenshot.png)
 
 ## Description
 
-EverythingShop is a simple e-commerce application built with React as part of a Front-End Development assignment. Users can browse products, view detailed product information, add items to the cart, and complete a checkout flow.
+Everything Store is a simple e-commerce application built with React as part of a Front-End Development assignment. Users can browse products, view detailed product information, add items to the cart, and complete a checkout flow.
 
 ## Features
 
